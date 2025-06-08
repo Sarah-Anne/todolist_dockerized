@@ -23,7 +23,7 @@ function TaskForm({ onAdd, onUpdate, selectedTask }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}> 
       <input
         type="text"
         value={title}
@@ -33,6 +33,7 @@ function TaskForm({ onAdd, onUpdate, selectedTask }) {
       <button type="submit" className="add-btn">
         ➕ {selectedTask ? 'Modifier' : 'Ajouter'}
       </button>
+      
     </form>
   );
 }

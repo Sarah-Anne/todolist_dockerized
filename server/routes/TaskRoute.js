@@ -1,4 +1,3 @@
-// routes/todoRoutes.js
 import express from 'express';
 import Todo from '../models/TodoModel.js';
 
@@ -26,7 +25,6 @@ router.get('/todolist', async (req, res) => {
 });
 
 // changer le nom de la tache
-// changer le nom de la tâche
 router.put('/newTaskName/:id', async (req, res) => {
   try {
     const { id } = req.params;

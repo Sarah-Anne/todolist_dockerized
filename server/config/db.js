@@ -8,4 +8,5 @@ const sequelize = new Sequelize('todolistdb', 'esmt', 'passer', {
   logging: false,
 });
 
+
 export default sequelize;

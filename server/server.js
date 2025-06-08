@@ -1,4 +1,3 @@
-// index.js
 import express from 'express';
 import bodyParser from 'body-parser';
 import sequelize from './config/db.js';
@@ -8,7 +7,7 @@ import cors from 'cors';
 const app = express();
 const PORT = 4040;
 
-// ✅ CORS doit être avant les routes
+
 app.use(cors({
   origin: "http://localhost:3000",
   methods: ["POST", "GET", "PUT", "DELETE"],
@@ -17,7 +16,7 @@ app.use(cors({
 
 app.use(bodyParser.json());
 
-// ✅ Ensuite les routes
+
 app.use('/api', todoRoutes);
 
 // Synchronisation avec la base de données

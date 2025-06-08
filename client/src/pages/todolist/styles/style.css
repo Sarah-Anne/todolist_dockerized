@@ -1,18 +1,4 @@
-/* --- Style global --- */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
 
-  /* 🟡 OPTION 2 : fond quadrillé jaune pastel (décommente si tu préfères)*/
-  background-color: #66e8e8;
-  background-image: linear-gradient(#f379c6 5px, transparent 5px), 
-                    linear-gradient(90deg, #f091cd 5px, transparent 5px);
-  background-size: 20px 20px;
-  
-}
-
-/* --- Conteneur principal --- */
 .container {
   max-width: 600px;
   margin: 50px auto;
@@ -20,9 +6,21 @@ body {
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../../.././assets/images/brown.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-/*---------------------------------------------------------*/
 form {
   display: flex;
   justify-content: center;
@@ -36,28 +34,29 @@ form input[type="text"] {
   padding: 12px;
   font-size: 16px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  border: 1px solid #f16ebf;
+  background-color: #f6e7f2;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .add-btn {
   padding: 12px 18px;
   font-size: 16px;
-  background-color: #ffc6e3; /* rose pastel */
+  background-color: #ffc6e3; 
   color: #333;
   border: none;
+  margin-bottom: 2%;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .add-btn:hover {
-  background-color: #f9a8d4; /* rose un peu plus vif au survol */
+  background-color: #f9a8d4; 
 }
 
-
-/*---------------------------------------------------------*/
 
 /* --- Titre principal --- */
 h1 {
@@ -89,7 +88,7 @@ h1 {
 }
 
 .task.completed {
-  background-color: #d8f3dc;
+  background-color: #f2a9d3;
   opacity: 0.7;
 }
 
@@ -128,7 +127,6 @@ h1 {
   background-color: #c2b5ff;
 }
 
-/* --- Champ de saisie --- */
 input[type="text"] {
   width: 100%;
   padding: 10px;
@@ -139,8 +137,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-/* ✅ --- Bouton "Ajouter" --- */
-.add-btn {
+/* .add-btn {
   background-color: #ffc8dd;
   color: #4a4a4a;
   border: none;
@@ -152,9 +149,10 @@ input[type="text"] {
   transition: 0.3s ease;
   margin-top: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .add-btn:hover {
   background-color: #ffafcc;
   transform: scale(1.05);
 }
+
