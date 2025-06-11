@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 app.use('/api', todoRoutes);
 
 // Synchronisation avec la base de données
+app.get('/', (req, res) => {
+  res.send('Bienvenue sur l\'API ToDo List !');
+});
 sequelize.sync({ alter: true })
   .then(() => {
     console.log('Base de données synchronisée');

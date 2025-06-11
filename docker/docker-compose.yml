@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   mysql:
     image: mysql:8.0
@@ -11,7 +13,7 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
   adminer:
     image: adminer
@@ -20,5 +22,32 @@ services:
     ports:
       - "8080:8080"
 
+  server:
+    build:
+      context: ../server
+      dockerfile: Dockerfile
+    container_name: server-app
+    restart: always
+    ports:
+      - "4040:4040"
+    environment:
+      DB_HOST: mysql
+      DB_USER: esmt
+      DB_PASSWORD: passer
+      DB_NAME: todolistdb
+    depends_on:
+      - mysql
+
+  client:
+    build:
+      context: ../client
+      dockerfile: Dockerfile
+    container_name: client-app
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+
 volumes:
-  mysql-data:
+  mysql-data :
