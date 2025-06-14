@@ -1,8 +1,9 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 4c10988d5f1f16fb564d32c4a7e5ae6d13f10274
-ToDo List - Projet Web Collaboratif
+---
+<p style="text-align:center; color:orange; font-weight: bold;">
+📋 ToDo List - Projet Web Collaboratif
+</p>
+
 
 Ce projet est une application web de gestion de tâches (ToDo List) développée dans un cadre académique en groupe. Il permet d’ajouter, modifier, supprimer et visualiser des tâches via une interface simple et.
 
@@ -47,19 +48,11 @@ Ce projet est une application web de gestion de tâches (ToDo List) développée
 
 2. Exécuter la commande :
 
-<<<<<<< HEAD
 bash
 docker-compose up --build
 
 
 > L'application sera disponible sur http://localhost
-=======
-```bash
-docker-compose up --build
-```
-
-> L'application sera disponible sur `http://localhost`
->>>>>>> 4c10988d5f1f16fb564d32c4a7e5ae6d13f10274
 
 ---------------------------------------------------------------------
 
@@ -88,17 +81,10 @@ todolist/
 
 ## Membres du projet
 
-<<<<<<< HEAD
 - *Najad Naar Diop* – Développement frontend & backend  
 - *Assétou Keïta* – Sécurité  
 - *Ibrahim Diaw & Baï Sarah Anne Gbaguidi* – Dockerisation  
 - *Ibrahim Diaw & Baï Sarah Anne Gbaguidi* – Infrastructure  
-=======
-- **Najad Naar Diop** – Développement frontend & backend  
-- **Assétou Keïta** – Sécurité  
-- **Ibrahim Diaw & Baï Sarah Anne Gbaguidi** – Dockerisation  
-- **Ibrahim Diaw & Baï Sarah Anne Gbaguidi** – Infrastructure  
->>>>>>> 4c10988d5f1f16fb564d32c4a7e5ae6d13f10274
 
 
 ----------------------------------------------------------------------
@@ -115,8 +101,4 @@ todolist/
 
 Ce projet est libre pour un usage académique. Toute réutilisation doit mentionner les auteurs.
 
-<<<<<<< HEAD
 ---------------------------------------------------------------------
-=======
----------------------------------------------------------------------
->>>>>>> 4c10988d5f1f16fb564d32c4a7e5ae6d13f10274
